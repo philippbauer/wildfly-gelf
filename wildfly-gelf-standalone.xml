@@ -90,7 +90,7 @@
             <custom-handler name="GelfLogger" class="biz.paluch.logging.gelf.jboss7.JBoss7GelfLogHandler" module="biz.paluch.logging">
                 <level name="INFO"/>
                 <properties>
-                    <property name="host" value="udp:${env.GRAYLOG_HOST}""/>
+                    <property name="host" value="udp:${env.GRAYLOG_HOST}"/>
                     <property name="port" value="12201"/>
                     <property name="version" value="1.1"/>
                     <property name="facility" value="logstash-test2"/>
