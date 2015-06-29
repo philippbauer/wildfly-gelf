@@ -93,15 +93,12 @@
                     <property name="host" value="udp:${env.GRAYLOG_HOST}"/>
                     <property name="port" value="12201"/>
                     <property name="version" value="1.1"/>
-                    <property name="facility" value="logstash-test2"/>
+                    <property name="facility" value="${env.APPLICATION_NAME}"/>
                     <property name="extractStackTrace" value="true"/>
                     <property name="filterStackTrace" value="true"/>
                     <property name="mdcProfiling" value="true"/>
                     <property name="timestampPattern" value="yyyy-MM-dd HH:mm:ss,SSSS"/>
                     <property name="maximumMessageSize" value="8192"/>
-                    <property name="additionalFields" value="fieldName1=fieldValue1,fieldName2=fieldValue2"/>
-                    <property name="mdcFields" value="mdcField1,mdcField2"/>
-                    <property name="dynamicMdcFields" value="mdc.*,(mdc|MDC)fields"/>
                     <property name="includeFullMdc" value="true"/>
                 </properties>
             </custom-handler>
